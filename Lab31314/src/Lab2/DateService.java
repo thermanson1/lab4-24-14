@@ -18,7 +18,11 @@ import java.util.Date;
  */
 public class DateService {
     
-    public Date toDateObject(String date){
+    //date cannot be null
+    public Date toDateObject(String date) throws IllegalArgumentException{
+        if (date == null){
+            throw new IllegalArgumentException("The date entered cannot be null");
+        }
         date = date.trim();
         Date d = new Date();
         Calendar calendar = Calendar.getInstance();
@@ -34,7 +38,11 @@ public class DateService {
         }
         return d;
     }
-    public Calendar toCalendarObject(String date){
+    //date cannot be null
+    public Calendar toCalendarObject(String date) throws IllegalArgumentException{
+        if (date == null){
+            throw new IllegalArgumentException("Date entered cannot be null");
+        }
         date = date.trim();
         Date d = new Date();
         String format = "MM/dd/yyyy hh:mm a";
