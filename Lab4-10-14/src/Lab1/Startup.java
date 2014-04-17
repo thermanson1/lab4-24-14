@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package Contact;
+package Lab1;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -39,7 +39,7 @@ public class Startup {
 	   while(line != null){
                fileContents.add(line);
                 line = in.readLine();
-               for (int i = 0; i < 7; i++){
+               for (int i = 0; i < fileContents.size(); i++){
                   
                    if( i == 0){
                        one.setFirstName(fileContents.get(i));     
@@ -62,11 +62,9 @@ public class Startup {
                    if( i == 6){
                        one.setPhoneNo(fileContents.get(i));     
                    }
-                   else{
+                   if (i == 7){
                        one.setEmail(fileContents.get(i));     
                    }
-               }
-               for (int i = 8; i < 16; i++){
 
                    if( i == 8){
                        two.setFirstName(fileContents.get(i));     
@@ -89,11 +87,9 @@ public class Startup {
                    if( i == 14){
                        two.setPhoneNo(fileContents.get(i));     
                    }
-                   else{
+                   if ( i == 15) {
                        two.setEmail(fileContents.get(i));     
                    }
-               }
-               for (int i = 16; i < 24; i++){
 
                    if( i == 16){
                        three.setFirstName(fileContents.get(i));     
@@ -116,12 +112,10 @@ public class Startup {
                    if( i == 22){
                        three.setPhoneNo(fileContents.get(i));     
                    }
-                   else{
+                   if (i == 23){
                        three.setEmail(fileContents.get(i));     
                    }
-               }
-               for (int i = 24; i < 32; i++){
-
+              
                    if( i == 24){
                        four.setFirstName(fileContents.get(i));     
                    }
@@ -174,6 +168,8 @@ public class Startup {
             String s = (String)obj;
             System.out.println(s);
         }
+        
+       
   }
   }
 }

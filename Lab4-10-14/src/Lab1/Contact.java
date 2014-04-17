@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package Contact;
+package Lab1;
 
 import java.util.Objects;
 
