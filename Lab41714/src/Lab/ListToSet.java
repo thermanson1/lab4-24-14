@@ -17,7 +17,7 @@ import java.util.Set;
  */
 public class ListToSet {
     public static void main(String[] args) {
-        List<Employee> employees = new ArrayList<Employee>();
+        List<Employee> employees = new ArrayList<>();
     
     Employee one = new Employee("Jones", "Thomas", "222-22-2222");
     Employee two = new Employee("Smith", "Jane", "333-33-3333");
